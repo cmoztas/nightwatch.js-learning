@@ -14,7 +14,7 @@ module.exports = {
         browserName: 'chrome',
         chromeOptions: {
           args: [
-            'start-maximized'
+            // 'start-maximized'
           ]
         }
       }
