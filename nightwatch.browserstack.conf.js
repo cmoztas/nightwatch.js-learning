@@ -4,7 +4,7 @@ const config = {
     ...baseConfig,
     webdriver: {
         'start_process': false,
-        'host': 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c',
+        'host': 'hub-cloud.browserstack.com',
         'port': 80
     },
 };

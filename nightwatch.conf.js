@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   src_folders: ['tests'],
   page_objects_path: ['page-objects'],
@@ -18,7 +20,10 @@ module.exports = {
         path: 'tests_output/screenshots'
       },
       desiredCapabilities: {
-        browserName: "chrome"
+        browserName: "chrome",
+        chromeOptions: {
+          args: ['--headless']
+        }
       }
     }
   }

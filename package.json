@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "devDependencies": {
     "chromedriver": "^104.0.0",
     "nightwatch": "^2.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2"
   }
 }
