@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "postinstall": "cd ./node_modules/protractor && npm i webdriver-manager@12.1.6",
   "scripts": {
     "test": "nightwatch",
-    "debug": "node --inspect-brk ./node_modules/.bin/nightwatch"
+    "debug": "node --inspect-brk ./node_modules/.bin/nightwatch",
+    "postinstall": "cd ./node_modules/protractor && npm i webdriver-manager@12.1.6"
   },
   "keywords": [],
   "author": "",
