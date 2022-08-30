@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "62.0.3202.94",
+    "chromedriver": "^2.46.0",
     "nightwatch": "^2.3.3"
   }
 }
