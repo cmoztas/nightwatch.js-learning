@@ -2,10 +2,14 @@ module.exports = {
   src_folders: ['tests'],
   page_objects_path: ['page-objects'],
 
+  selenium: {
+    start_process: true
+  },
+
   webdriver: {
     start_process: true,
     port: 9515,
-    server_path: require('chromedriver').path,
+    server_path: 'node_modules/.bin/chromedriver',
     cli_args: []
   },
 
