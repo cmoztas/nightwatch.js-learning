@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch --tag instagram"
+    "lint": "eslint .",
+    "test": "nightwatch",
+    "debug": "node --inspect-brk ./node_modules/.bin/nightwatch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chromedriver": "^104.0.0",
-    "geckodriver": "^3.0.2",
     "nightwatch": "^2.3.3"
   }
 }
