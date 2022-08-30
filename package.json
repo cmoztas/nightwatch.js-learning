@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
     "test": "nightwatch",
     "debug": "node --inspect-brk ./node_modules/.bin/nightwatch"
   },
@@ -12,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "^104.0.0",
+    "chromedriver": "^2.46.0",
     "nightwatch": "^2.3.3"
   }
 }
