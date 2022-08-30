@@ -11,11 +11,22 @@ module.exports = {
   test_settings: {
     default: {
       desiredCapabilities: {
-        browserName: 'chrome',
+        browserName: "chrome",
         chromeOptions: {
           args: [
-            // 'start-maximized'
+            'start-maximized'
           ]
+        }
+      }
+    },
+    firefox: {
+      desiredCapabilities: {
+        browserName: "firefox",
+        acceptInsecureCerts: true,
+        alwaysMatch: {
+          "moz:firefoxOptions": {
+            args: ["-headless"]
+          }
         }
       }
     }

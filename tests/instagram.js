@@ -2,7 +2,7 @@ const fs = require('fs');
 
 module.exports = {
     '@tags': ['instagram'],
-    'Instagram remove saved posts'(browser)
+    'Instagram get username, remove saved posts and write to file if its doesnt exists on file'(browser)
     {
         const instagramUsername = 'YOUR_USERNAME';
         const instagramPassword = 'YOUR_PASSWORD';
@@ -10,12 +10,12 @@ module.exports = {
         const passwordInput = 'input[name="password"]';
         const submitButton = 'button[type="submit"]';
         const avatar = 'span[data-testid="user-avatar-link"]';
-        const savedLink = 'a[href="/YOUR_USERNAME/saved/"]';
-        const allPostsDiv = 'div[aria-label="Tüm Gönderiler"]';
-        const firstLink = 'a[href="YOUR_LAST_SAVED_POST_ID_LINK_AFTER_INSTAGRAM_LINK(STARTS_WITH: /p/POST_ID/)"]';
+        const savedLink = 'a[href="/' + instagramUsername + '/saved/"]';
+        const allPostsDiv = 'div[aria-label="Tüm Gönderiler"]'; // "All Posts" for English
+        const firstLink = 'article > div > div >div > div > a"]';
         const contentPopupUsernameSelector = 'div[role="presentation"] header span a';
-        const saveIconButton = 'svg[aria-label="Kaldır"]';
-        const nextPostButton = 'svg[aria-label="İleri"]';
+        const saveIconButton = 'svg[aria-label="Kaldır"]'; // "Remove" for English
+        const nextPostButton = 'svg[aria-label="İleri"]'; // "Next" for English
         const defaultPostAmount = 9999;
 
         browser
@@ -63,7 +63,7 @@ module.exports = {
                 .click(saveIconButton)
                 .pause(2500)
                 .click(nextPostButton)
-                .pause(3500);
+                .pause(2500);
         }
 
     }
