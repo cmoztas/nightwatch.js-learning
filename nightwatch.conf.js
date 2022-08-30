@@ -4,9 +4,11 @@ module.exports = {
 
   webdriver: {
     start_process: true,
-    port: 9515,
+    port: 9516,
     server_path: 'node_modules/.bin/chromedriver',
-    cli_args: []
+    cli_args: [
+      '--port=9516'
+    ]
   },
 
   test_settings: {

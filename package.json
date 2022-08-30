@@ -5,15 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch",
-    "debug": "node --inspect-brk ./node_modules/.bin/nightwatch",
-    "postinstall": "cd ./node_modules/protractor && npm i webdriver-manager@12.1.6"
+    "debug": "node --inspect-brk ./node_modules/.bin/nightwatch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chromedriver": "^2.46.0",
-    "nightwatch": "^2.3.3",
-    "protractor": "^7.0.0"
+    "nightwatch": "^2.3.3"
   }
 }
