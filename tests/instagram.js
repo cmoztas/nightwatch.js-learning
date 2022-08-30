@@ -2,7 +2,7 @@ const fs = require('fs');
 
 module.exports = {
     '@tags': ['instagram'],
-    'Instagram get username, remove saved posts and write to file if its doesnt exists on file'(browser)
+    'Instagram saved posts -> get username, remove from save and write username to file if its doesnt exists on file'(browser)
     {
         const instagramUsername = 'YOUR_USERNAME';
         const instagramPassword = 'YOUR_PASSWORD';
